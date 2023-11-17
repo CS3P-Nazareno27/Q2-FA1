@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="FA1" content="2nd quarter Formative Assessment 1">
+
+        <title>FA1 2nd Quarter</title>
+
+    </head>
+    <body>
+
+        <a href="#div1" class="linkone">First Link</a>
+        <a href="#div2" class="linktwo">Second Link</a> 
+        <br>
+
+        <div id="div1">Div 1 here</div><br>
+        <div id="div2">Div 2 here</div>
+
+    </body>
+
+    <style>
+
+        .linkone{
+            color: #333;
+            background-color: fuchsia;
+        }
+        .linktwo{
+            color: #ff0000;
+            background-color: #66ccff;
+        }
+        a:link{
+            display: inline-block;
+            border: 1px solid black;
+            margin: 5px;
+            text-decoration: none;
+            padding: 5px 10px;  
+        }
+        a:hover {
+            background-color:   rgb(213, 16, 144);
+        }
+        a:active {
+            background-color: #555;
+            color: #fff;
+        }
+        a:visited {
+            color: rgb(15, 128, 0);
+        }
+        div{
+
+            border: 3px solid black;
+            width: 100px;
+            height: 100px;
+        }
+        #div1:target {
+            background-color: #66ccff;
+            color: #fff;
+        }
+        #div2:target {
+            background-color: darkcyan;
+            border: 10px dotted green;
+            width: 100px;
+        }
+    </style>
+</html>
